@@ -5,10 +5,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="main.css">
   <title>cssMemeSlider</title>
 </head>
 
 <body>
+  <div class="carousel">
+    <input type="radio" name="slider" id="slide1" class="carousel__input" checked>
+    <input type="radio" name="slider" id="slide2" class="carousel__input">
+    <input type="radio" name="slider" id="slide3" class="carousel__input">
+    <input type="radio" name="slider" id="slide4" class="carousel__input">
+
+    <div class="carousel__slider">
+      <div class="carousel__slide slide1"></div>
+      <div class="carousel__slide slide2"></div>
+      <div class="carousel__slide slide3"></div>
+      <div class="carousel__slide slide4"></div>
+    </div>
+
+    <div class="carousel__contents">
+      <div class="carousel__slider-names">
+        <div class="carousel__slide-name">Слайд 1</div>
+        <div class="carousel__slide-name">Слайд 2</div>
+        <div class="carousel__slide-name">Слайд 3</div>
+        <div class="carousel__slide-name">Слайд 4</div>
+      </div>
+      <div class="carousel__controls">
+        <label for="slide1" class="carousel__control"></label>
+        <label for="slide2" class="carousel__control"></label>
+        <label for="slide3" class="carousel__control"></label>
+        <label for="slide4" class="carousel__control"></label>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
 
 </body>
 
