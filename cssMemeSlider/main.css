@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 600px;
-  height: 400px;
+  height: 100%;
   margin: 10px auto;
   border-radius: 6px;
   font-size: 14px;
@@ -28,6 +28,7 @@ body {
   height: 100%;
   display: flex;
   transition: transform 0.5s ease-in-out;
+  z-index: 100;
 }
 
 .carousel__slide {
@@ -39,19 +40,23 @@ body {
 }
 
 .slide1 {
-  background-color: orange;
+  /* background-color: orange; */
+  background-color: #002e3e;
 }
 
 .slide2 {
-  background-color: red;
+  /* background-color: red; */
+  background-color: #002e3e;
 }
 
 .slide3 {
-  background-color: green;
+  /* background-color: green; */
+  background-color: #002e3e;
 }
 
 .slide4 {
-  background-color: blue;
+  /* background-color: blue; */
+  background-color: #002e3e;
 }
 
 .carousel__controls {
@@ -62,6 +67,7 @@ body {
   height: 100%;
   background-color: #002e3e;
   align-items: center;
+  min-height: 6vmax;
 }
 
 .carousel__control {
@@ -189,4 +195,13 @@ body {
 
 #slide4:checked ~ .carousel__contents .carousel__slider-names {
   transform: translateX(-300%);
+}
+
+.carousel__item {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__img {
+  width: 90%;
 }
