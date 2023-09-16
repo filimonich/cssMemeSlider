@@ -217,24 +217,6 @@ body {
   transform: translateX(-300%);
 }
 
-@media (max-width: 31.25rem) {
-  #slide1:checked ~ .carousel__contents .carousel__slider-names {
-    transform: translateX(0);
-  }
-
-  #slide2:checked ~ .carousel__contents .carousel__slider-names {
-    transform: translateX(-100%);
-  }
-
-  #slide3:checked ~ .carousel__contents .carousel__slider-names {
-    transform: translateX(-200%);
-  }
-
-  #slide4:checked ~ .carousel__contents .carousel__slider-names {
-    transform: translateX(-300%);
-  }
-}
-
 .carousel__item {
   display: flex;
   justify-content: center;
