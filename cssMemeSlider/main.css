@@ -12,17 +12,14 @@ body {
   width: 600px;
   height: 400px;
   margin: 10px auto;
-}
-
-@media (max-width: 500px) {
-  .carousel {
-    width: 90%;
-  }
+  border-radius: 6px;
+  font-size: 14px;
 }
 
 @media (max-width: 700px) {
   .carousel {
     width: 90%;
+    font-size: 10px;
   }
 }
 
@@ -62,7 +59,9 @@ body {
   display: flex;
   justify-content: center;
   width: 50%;
+  height: 100%;
   background-color: #002e3e;
+  align-items: center;
 }
 
 .carousel__control {
@@ -152,12 +151,17 @@ body {
 
 .carousel__text {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 .carousel__slider-names {
   z-index: 1;
   display: flex;
   width: 50%;
+  height: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -169,7 +173,6 @@ body {
   transition: transform 0.5s ease-in-out;
   height: 100%;
   overflow: hidden;
-  white-space: nowrap;
 }
 
 #slide1:checked ~ .carousel__contents .carousel__slider-names {
@@ -187,8 +190,3 @@ body {
 #slide4:checked ~ .carousel__contents .carousel__slider-names {
   transform: translateX(-300%);
 }
-
-/* .carousel__area {
-  padding: 16px;
-  margin: -12px;
-} */
