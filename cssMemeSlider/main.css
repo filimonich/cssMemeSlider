@@ -14,12 +14,14 @@ body {
   margin: 10px auto;
   border-radius: 6px;
   font-size: 14px;
+  background-color: #002e3e;
 }
 
 @media (max-width: 700px) {
   .carousel {
     width: 90%;
     font-size: 10px;
+    gap: 5px;
   }
 }
 
@@ -67,7 +69,13 @@ body {
   height: 100%;
   background-color: #002e3e;
   align-items: center;
-  min-height: 6vmax;
+  min-height: 8vmax;
+}
+
+@media (max-width: 700px) {
+  .carousel__controls {
+    min-height: 0;
+  }
 }
 
 .carousel__control {
@@ -150,9 +158,14 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  max-height: 60px;
   background-color: #002e3e;
   color: #93c1a5;
+}
+
+@media (max-width: 500px) {
+  .carousel__contents {
+    flex-direction: column-reverse;
+  }
 }
 
 .carousel__text {
@@ -163,12 +176,25 @@ body {
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  .carousel__text {
+    padding: 0 10px;
+  }
+}
+
 .carousel__slider-names {
   z-index: 1;
   display: flex;
+  align-items: center;
   width: 50%;
   height: 100%;
   transition: transform 0.5s ease-in-out;
+}
+
+@media (max-width: 500px) {
+  .carousel__slider-names {
+    width: 100%;
+  }
 }
 
 .carousel__slide-name {
@@ -195,6 +221,24 @@ body {
 
 #slide4:checked ~ .carousel__contents .carousel__slider-names {
   transform: translateX(-300%);
+}
+
+@media (max-width: 500px) {
+  #slide1:checked ~ .carousel__contents .carousel__slider-names {
+    transform: translateX(0);
+  }
+
+  #slide2:checked ~ .carousel__contents .carousel__slider-names {
+    transform: translateX(-100%);
+  }
+
+  #slide3:checked ~ .carousel__contents .carousel__slider-names {
+    transform: translateX(-200%);
+  }
+
+  #slide4:checked ~ .carousel__contents .carousel__slider-names {
+    transform: translateX(-300%);
+  }
 }
 
 .carousel__item {
