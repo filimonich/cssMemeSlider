@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="main.css">
+  <title>cssMemeSlider</title>
+</head>
+
+<body>
+  <div class="carousel">
+    <input type="radio" name="slider" id="slide1" class="carousel__input" checked>
+    <input type="radio" name="slider" id="slide2" class="carousel__input">
+    <input type="radio" name="slider" id="slide3" class="carousel__input">
+    <input type="radio" name="slider" id="slide4" class="carousel__input">
+
+    <div class="carousel__slider">
+      <div class="carousel__slide slide1">
+        <div class="carousel__item"><img src="image/java.jpg" alt="Java" class="carousel__img"></div>
+      </div>
+      <div class="carousel__slide slide2">
+        <div class="carousel__item"><img src="image/script.jpg" alt="Script" class="carousel__img"></div>
+      </div>
+      <div class="carousel__slide slide3">
+        <div class="carousel__item"><img src="image/java-kids.png"
+            alt="Supermarket, a child is sitting in a grocery basket and crying while reading a JavaScript book for kids"
+            class="carousel__img"></div>
+      </div>
+      <div class="carousel__slide slide4">
+        <div class="carousel__item"><img src="image/javaold.png"
+            alt="Two frames. First: a workplace with a computer and a chair is in a children's playpen. Second: a bearded, short child with a tired look drinks a cocktail."
+            class="carousel__img"></div>
+      </div>
+    </div>
+
+    <div class="carousel__contents">
+      <div class="carousel__slider-names">
+        <div class="carousel__slide-name">
+          <p class="carousel__text">
+            Java
+          </p>
+        </div>
+        <div class="carousel__slide-name">
+          <p class="carousel__text">
+            Script
+          </p>
+        </div>
+        <div class="carousel__slide-name">
+          <p class="carousel__text">
+            Supermarket, a child is sitting in a grocery basket and crying while reading a JavaScript book for kids
+          </p>
+        </div>
+        <div class="carousel__slide-name">
+          <p class="carousel__text">
+            Two frames, the first one: a workplace with a computer and a chair, is in a children's playpen. Second: a
+            bearded child with a tired look drinks a cocktail.
+          </p>
+        </div>
+      </div>
+      <div class="carousel__controls">
+        <label for="slide1" class="carousel__control">
+          <span class="carousel__area"></span>
+        </label>
+        <label for="slide2" class="carousel__control">
+          <span class="carousel__area"></span>
+        </label>
+        <label for="slide3" class="carousel__control">
+          <span class="carousel__area"></span>
+        </label>
+        <label for="slide4" class="carousel__control">
+          <span class="carousel__area"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
